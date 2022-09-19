@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Introduction - $issue_title</title>
+</head>
+
+<body>
+    <!-- Style have to be placed in the body, because Ebooklib, 
+        strips all tags except the <title> tag from the head -->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <div>
+        <div id="chapter-1" xml:lang="en-US">
+            <h1 class="entry-title">$issue_title</h1>
+            <div>
+                $issue_intro_text
+            </div>
+        </div>
+        <div>
+            <div>
+                <h4>About the Cover Artist</h4>
+            </div>
+            <div class="author_bio"><img src="../images/$cover_artist_img" /></div>
+            <p class="author_bio_text"> $cover_artist_bio </p>
+        </div>
+    </div>
+</body>
+
+</html>

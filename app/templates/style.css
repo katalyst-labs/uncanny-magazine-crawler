@@ -1,0 +1,28 @@
+.byline {
+    font-style: italic;
+}
+
+.entry-title {
+    text-align: left;
+}
+
+.copyright {
+    text-align: right;
+    font-weight: bold;
+}
+
+.author-box {
+    height: 300px;
+
+}
+
+.author_bio img {
+    display: inline;
+    float: left;
+    padding-right: 2rem;
+}
+
+.footer a:link {
+    color: black;
+    font-weight: bold;
+}

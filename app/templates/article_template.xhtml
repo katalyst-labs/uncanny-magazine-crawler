@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>$page_title</title>
+</head>
+
+<body>
+    <!-- Style have to be placed in the body, because Ebooklib, 
+        strips all tags except the <title> tag from the head -->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <div xml:lang="en-US">
+        <h2 class="entry-title">$title</h2>
+        <h4 class="byline">$byline</h4>
+        <div>
+            $article_text
+        </div>
+        <div class="author_box">
+            <div class="author_bio"><img src="../images/$author_img" /></div>
+            <h2 class="author-bio-name"> $author_name </h2>
+            <p class="author_bio_text"> $author_bio </p>
+        </div>
+    </div>
+</body>
+
+</html>

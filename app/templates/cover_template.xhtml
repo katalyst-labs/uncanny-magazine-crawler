@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Cover - $issue_title</title>
+</head>
+
+<body>
+    <!-- Style have to be placed in the body, because Ebooklib, 
+        strips all tags except the <title> tag from the head -->
+    <style type="text/css">
+        img {
+            max-width: 100%;
+        }
+
+        #cover-image {
+            text-align: center;
+        }
+    </style>
+    <div id="cover-image">
+        <img alt="$cover_alt_text" src="../images/$cover_url" />
+    </div>
+</body>
+
+</html>
