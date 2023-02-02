@@ -8,8 +8,7 @@ from ebooklib.utils import guess_type
 
 def get_content(file_name: str) -> bytes:
     with open(file_name, "rb") as f:
-        content = f.read()
-        return content
+        return f.read()
 
 
 def make_chapter(title: str, file_name: str, content: bytes):
@@ -23,14 +22,12 @@ def make_chapter(title: str, file_name: str, content: bytes):
 
 def add_item(file_name: str, content: bytes):
     """Adds media and non HTML files to ePub"""
-    # BUG Does not work as expected
-    item = epub.EpubItem(
+    return epub.EpubItem(
         uid=str(uuid.uuid4()),
         file_name=f"images/{file_name}",
         media_type=guess_type(file_name[0]),
         content=content,
     )
-    return item
 
 
 def download_image(url: str, path: str, file_name: str = None, key: int = -1):
@@ -50,7 +47,4 @@ def sanitize(string: str) -> str:
     """Sanatizer function to clean extractes text from unwanted spaces etc."""
     string = string.strip()
     string = string.replace("&", "&amp;")
-    # string = string.replace("\r\n", "\n")
-    # string = string.rstrip("\r\n")
-    string = " ".join(string.split())
-    return string
+    return " ".join(string.split())

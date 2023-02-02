@@ -67,7 +67,7 @@ class IssueCrawler:
         )
         cover_artist.find("img").decompose()
 
-        self._contents["cover_artist_bio"] = "{}".format(cover_artist.find("p"))
+        self._contents["cover_artist_bio"] = f'{cover_artist.find("p")}'
 
         widgets = issue_content.find_all("div", class_="widget")
 
@@ -77,7 +77,7 @@ class IssueCrawler:
             _chapters = []
 
             heading = items.find("h3").get_text()
-            chap_links = [p for p in items.find_all("p", recursive=False)]
+            chap_links = list(items.find_all("p", recursive=False))
             for chap in chap_links:
                 title = chap.find("a", href=True).get_text()
                 url = chap.find("a", href=True)["href"]
