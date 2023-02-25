@@ -22,5 +22,3 @@ proper retail-like ePub file. The free online content is released in two stages 
 __This software was written for educational and private-use.__
 
 __*If you like the content Please Support the Author's and Site by purchasing a copy or through donations.*__
-
-for questions - Glen_katalyst@protonmail.com
